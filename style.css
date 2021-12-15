@@ -28,6 +28,14 @@ svg #loop {
   stroke: none;
 }
 
+svg #strokeLight {
+  z-index: 2;
+}
+
+svg #strokeDark {
+  z-index: 1;
+}
+
 svg #loopBox {
   /* fill: rgba(0, 0, 0, 0.27); */
   fill: #222222;
