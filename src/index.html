@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>8 Loop Animation</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <svg id="illustration" xmlns="http://www.w3.org/2000/svg" width="1101" height="618.005" viewBox="0 0 1101 618.005">
+    <path id="svg1" stroke-width="160px" stroke="rgba(0,0,0, 0.27)" fill="none"
+      d="M550.5,309.5c-33-147.63-125.95-245.18-245.18-245.18S60.66,149.52,60.66,309s133.18,243.07,252.4,243.07c304.26,0,165.68-487.73,495.49-487.73,202.84,0,232.26,175,232.26,244.68,0,82-75.87,252.35-221.42,252.35C598.08,561.35,550.5,309.5,550.5,309.5Z"
+      transform="translate(0 0)" />
+
+    <path id="loop"
+      d="M1093.79,210.7c-7.089,0-13.585,0-20.084.59a307.281,307.281,0,0,0-200.826,90.9c24.809,24.791,44.892,54.3,60.249,87.358,5.315,10.625,9.45,22.43,12.995,34.235,27.17-44.86,73.242-73.783,128.174-79.1,6.5-.59,12.995-1.181,19.492-1.181,96.869,0,173.655,70.241,173.655,176.487s-76.786,176.487-173.655,176.487c-6.5,0-13.585-.59-19.492-1.181-54.341-5.9-101-34.235-128.174-79.1-8.268-13.575-14.176-28.332-18.9-44.269a212.063,212.063,0,0,1-6.5-51.943,310.109,310.109,0,0,0-4.134-52.533,284.251,284.251,0,0,0-10.633-44.269c-3.544-11.215-8.269-23.02-12.4-33.645h0c-2.362-5.312-5.315-10.624-8.269-15.937s-5.906-10.625-8.86-15.347a96.946,96.946,0,0,0-8.269-12.986c-.591-.59-1.182-1.771-1.772-2.361l-8.86-12.4c-1.181-1.771-2.954-3.542-4.725-5.9-.591-.59-1.182-1.771-1.772-2.361a118.275,118.275,0,0,0-8.268-9.445c-2.954-3.541-6.5-7.083-10.041-10.624A308.751,308.751,0,0,0,631.3,211.29c-6.5-.59-13.585-.59-20.082-.59C440.516,210.7,302.3,344.689,302.3,520c0,174.716,138.806,308.7,308.918,308.7,7.088,0,13.585,0,20.082-.59a308.754,308.754,0,0,0,201.417-90.9,237.418,237.418,0,0,1-20.083-22.43c-23.625-28.923-41.346-61.977-53.159-98.573C732.3,661.067,686.232,689.4,631.3,695.3c-6.5.59-13.585,1.181-20.082,1.181-96.87,0-173.066-70.24-173.066-176.487s76.787-176.487,173.066-176.487c7.088,0,13.585.59,20.082,1.181,54.341,5.9,101,34.235,128.175,79.1h0a159.137,159.137,0,0,1,18.311,43.679A188.19,188.19,0,0,1,784.874,520a298.485,298.485,0,0,0,4.135,51.943,268.95,268.95,0,0,0,10.631,44.269c11.814,36.6,29.534,69.651,53.16,98.573,6.5,7.674,12.995,15.347,20.083,22.43,51.387,52.533,122.267,86.178,200.826,90.9,6.5.59,13.585.59,20.082.59,170.7,0,309.509-133.989,309.509-308.7C1403.3,344.689,1264.49,210.7,1093.79,210.7Z"
+      transform="translate(-302.3 -210.7)" />
+
+    <path
+      d="M532.261,358.764H394.024a303.579,303.579,0,0,1-4.135-51.986A191.577,191.577,0,0,0,382.8,254.2H521.628a305.669,305.669,0,0,1,4.135,52.577A212.418,212.418,0,0,0,532.261,358.764Z"
+      transform="translate(91, 0)" />
+
+    <path id="loopBox"
+      d="M532.261,358.764H394.024a303.579,303.579,0,0,1-4.135-51.986A191.577,191.577,0,0,0,382.8,254.2H521.628a305.669,305.669,0,0,1,4.135,52.577A212.418,212.418,0,0,0,532.261,358.764Z"
+      transform="translate(91, 0)" />
+  </svg>
+
+  <!-- CDN Links -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenLite.min.js"
+    integrity="sha512-pvDW4tehKKsohH97164HwKwRGFpzayEFWTVbk8HuUoLIQ7Jp+WLN5XYokVuoCj2aT6dy8ihbW8SRTG1k0W4mSQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"
+    integrity="sha512-8Wy4KH0O+AuzjMm1w5QfZ5j5/y8Q/kcUktK9mPUVaUoBvh3QPUZB822W/vy7ULqri3yR8daH3F58+Y8Z08qzeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TimelineLite.min.js"
+      integrity="sha512-tSIDeirKC6suYILHqqPuZH3s0MvD4a5vCHXhBIcdmq4gQXZ2IB3fEYA5x2f3D2p/CbSqzKEvuTEVbS5VZ2u+ew=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/CSSPlugin.min.js"
+    integrity="sha512-ocsFo48WU8Xq6Y1Lwi7psXRAujG9E4TKNR4q1DbrKzaaxOMTEoao/a+mDoB+cYzY4lwbyxvqjkp/ZA1/MNlfsg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/BezierPlugin.min.js"
+    integrity="sha512-plyexAULVlTExvDn2yUZFJV9F8q+53MC/GpU9dEuNGXmrrI3J8Rcffjvxg3OOBALBvF+UILPLIBEoCeF2maqTQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./script.js"></script>
+
+</body>
+
+</html>

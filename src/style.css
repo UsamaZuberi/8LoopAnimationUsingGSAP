@@ -1,0 +1,41 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eeeeee;
+  position: relative;
+}
+
+#illustration {
+  -webkit-mask-image: url("./8loop-illustration.svg");
+  mask-image: url("./8loop-illustration.svg");
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
+svg #loop {
+  fill: rgba(0, 0, 0, 0.2);
+  stroke: none;
+}
+
+svg #loopBox {
+  /* fill: rgba(0, 0, 0, 0.27); */
+  fill: #222222;
+}
+
+svg #loopStroke {
+  fill: none;
+  stroke-width: 220px;
+  /* stroke: rgba(0, 0, 0, 0.27); */
+}
+
