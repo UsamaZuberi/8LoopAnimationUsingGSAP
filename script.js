@@ -90,7 +90,27 @@ function drawLine(obj, svg) {
   svg.style.strokeDasharray = [obj.length, obj.pathLength].join(" ");
 }
 
-// /* Stroke Animation Ends Here */
+/* Stroke Animation Ends Here */
+
+/* Process Cards Animation Starts Here */
+
+let processCard1 = document.querySelector("#processCard1");
+let processCard2 = document.querySelector("#processCard2");
+let processCard3 = document.querySelector("#processCard3");
+let processCard4 = document.querySelector("#processCard4");
+
+const timeLine = new TimelineMax({ repeat: -1, repeatDelay: delay });
+
+timeLine.to(processCard1, 1, { opacity: 1, delay: 1 });
+timeLine.to(processCard1, 1, { opacity: 0 });
+timeLine.to(processCard2, 1, { opacity: 1 });
+timeLine.to(processCard2, 1, { opacity: 0 });
+timeLine.to(processCard3, 1, { opacity: 1, delay: 1 });
+timeLine.to(processCard3, 1, { opacity: 0 });
+timeLine.to(processCard4, 1, { opacity: 1 });
+timeLine.to(processCard4, 1, { opacity: 0 });
+
+/* Process Cards Animation Ends Here */
 
 
 

@@ -15,6 +15,8 @@ body {
 }
 
 #illustration {
+  height: auto;
+  max-width: 100%;
   -webkit-mask-image: url("./8loop-illustration.svg");
   mask-image: url("./8loop-illustration.svg");
   -webkit-mask-repeat: no-repeat;
@@ -28,22 +30,61 @@ svg #loop {
   stroke: none;
 }
 
-svg #strokeLight {
-  z-index: 2;
+/* Process Animation CSS Starts Here */
+
+.processAnimation {
+  position: relative;
+  max-width: 80%;
+  margin: auto;
 }
 
-svg #strokeDark {
-  z-index: 1;
+.processCard {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 120px;
+  width: 180px;
+  color: #fff;
+  padding: 15px;
+  background-color: #888;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 30%);
+  opacity: 0;
+  transition: opacity 0.3s linear;
 }
 
-svg #loopBox {
-  /* fill: rgba(0, 0, 0, 0.27); */
-  fill: #222222;
+.processCard:nth-of-type(1) {
+  transform: translate(-250%, -220%);
+  /* animation: 10s 10s infinite processCardAnimation; */
 }
 
-svg #loopStroke {
-  fill: none;
-  stroke-width: 220px;
-  /* stroke: rgba(0, 0, 0, 0.27); */
+.processCard:nth-of-type(2) {
+  transform: translate(-250%, 115%);
 }
 
+.processCard:nth-of-type(3) {
+  transform: translate(150%, -220%);
+}
+
+.processCard:nth-of-type(4) {
+  transform: translate(150%, 115%);
+}
+
+.processCard__number {
+  font-size: 20px;
+  line-height: 1.4em;
+}
+
+.processCard__title {
+  font-size: 20px;
+  line-height: 1.4em;
+}
+
+/* Process Animation CSS Starts Here */
